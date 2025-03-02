@@ -6,9 +6,9 @@ noCvSss = false
 exportGlyphNames = true
 
 [buildPlans.lj-iosevka-term.namingOverride]
-copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Yip'
-manufacturer = 'Belleve Invis (original font), Jason Yip (customization)'
-designer = 'Belleve Invis (original font), Jason Yip (customization)'
+copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Chiu'
+manufacturer = 'Belleve Invis (original font), Jason Chiu (customization)'
+designer = 'Belleve Invis (original font), Jason Chiu (customization)'
 urlVendor = 'https://github.com/jasyip/ljs-iosevka'
 
 
@@ -28,14 +28,14 @@ capital-q = "crossing-baseline"
 capital-r = "straight-top-left-serifed"
 capital-u = "toothless-rounded-unilateral-motion-serifed"
 capital-v = "straight-motion-serifed"
-capital-w = "straight-motion-serifed"
+capital-w = "straight-almost-flat-top-motion-serifed"
 capital-x = "straight-unilateral-motion-serifed"
 capital-y = "straight-motion-serifed"
 a = "double-storey-toothless-corner"
 b = "toothless-corner-serifless"
 c = "unilateral-serifed"
 d = "toothless-corner-serifless"
-g = "double-storey"
+g = "double-storey-open"
 i = "serifed-flat-tailed"
 j = "serifed"
 l = "serifed-flat-tailed"
@@ -43,6 +43,7 @@ m = "short-leg-serifless"
 p = "earless-corner-serifless"
 q = "earless-corner-diagonal-tailed-serifless"
 u = "toothless-corner-serifless"
+w = "straight-almost-flat-top-motion-serifed"
 y = "curly-turn-serifless"
 long-s = "bent-hook-tailed"
 eszet = "sulzbacher-tailed-middle-serifed"
@@ -132,9 +133,9 @@ noCvSss = false
 exportGlyphNames = true
 
 [buildPlans.lj-iosevka-fcmono.namingOverride]
-copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Yip'
-manufacturer = 'Belleve Invis (original font), Jason Yip (customization)'
-designer = 'Belleve Invis (original font), Jason Yip (customization)'
+copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Chiu'
+manufacturer = 'Belleve Invis (original font), Jason Chiu (customization)'
+designer = 'Belleve Invis (original font), Jason Chiu (customization)'
 urlVendor = 'https://github.com/jasyip/ljs-iosevka'
 
 
@@ -154,14 +155,14 @@ capital-q = "crossing-baseline"
 capital-r = "straight-top-left-serifed"
 capital-u = "toothless-rounded-unilateral-motion-serifed"
 capital-v = "straight-motion-serifed"
-capital-w = "straight-motion-serifed"
+capital-w = "straight-almost-flat-top-motion-serifed"
 capital-x = "straight-unilateral-motion-serifed"
 capital-y = "straight-motion-serifed"
 a = "double-storey-toothless-corner"
 b = "toothless-corner-serifless"
 c = "unilateral-serifed"
 d = "toothless-corner-serifless"
-g = "double-storey"
+g = "double-storey-open"
 i = "serifed-flat-tailed"
 j = "serifed"
 l = "serifed-flat-tailed"
@@ -169,6 +170,7 @@ m = "short-leg-serifless"
 p = "earless-corner-serifless"
 q = "earless-corner-diagonal-tailed-serifless"
 u = "toothless-corner-serifless"
+w = "straight-almost-flat-top-motion-serifed"
 y = "curly-turn-serifless"
 long-s = "bent-hook-tailed"
 eszet = "sulzbacher-tailed-middle-serifed"
@@ -261,22 +263,25 @@ noCvSss = false
 exportGlyphNames = true
 
 [buildPlans.lj-iosevka-aile.namingOverride]
-copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Yip'
-manufacturer = 'Belleve Invis (original font), Jason Yip (customization)'
-designer = 'Belleve Invis (original font), Jason Yip (customization)'
+copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Chiu'
+manufacturer = 'Belleve Invis (original font), Jason Chiu (customization)'
+designer = 'Belleve Invis (original font), Jason Chiu (customization)'
 urlVendor = 'https://github.com/jasyip/ljs-iosevka'
 
 
 [buildPlans.lj-iosevka-aile.variants.design]
 capital-d = "more-rounded-serifless"
 capital-g = "toothless-rounded-serifless-hooked"
+capital-w = "straight-almost-flat-top-serifless"
 capital-q = "crossing-baseline"
-c = "unilateral-serifed"
-g = "double-storey"
+
+b = "bottom-cut-serifless"
+g = "double-storey-open"
 i = "serifed-flat-tailed"
 l = "serifed-flat-tailed"
 m = "short-leg-serifless"
-q = "tailed-serifless"
+q = "top-cut-tailed-serifless"
+w = "straight-almost-flat-top-serifless"
 y = "curly-turn-serifless"
 long-s = "bent-hook-tailed"
 eszet = "sulzbacher-tailed-serifless"
@@ -369,22 +374,25 @@ noCvSss = false
 exportGlyphNames = true
 
 [buildPlans.lj-iosevka-etoile.namingOverride]
-copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Yip'
-manufacturer = 'Belleve Invis (original font), Jason Yip (customization)'
-designer = 'Belleve Invis (original font), Jason Yip (customization)'
+copyright = 'Copyright 2015-{{currentYear}}, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Customization by Jason Chiu'
+manufacturer = 'Belleve Invis (original font), Jason Chiu (customization)'
+designer = 'Belleve Invis (original font), Jason Chiu (customization)'
 urlVendor = 'https://github.com/jasyip/ljs-iosevka'
 
 [buildPlans.lj-iosevka-etoile.variants.design]
 capital-a = "straight-tri-serifed"
 capital-d = "more-rounded-bilateral-serifed"
 capital-j = "serifed-both-sides"
+capital-w = "straight-almost-flat-top-serifed"
 capital-q = "crossing-baseline"
-g = "double-storey"
+
+g = "double-storey-open"
 i = "serifed-asymmetric"
 l = "serifed-asymmetric"
 m = "short-leg-serifed"
 q = "tailed-motion-serifed"
 u = "tailed-motion-serifed"
+w = "straight-almost-flat-top-serifed"
 y = "curly-turn-serifed"
 long-s = "bent-hook-tailed-middle-serifed"
 eszet = "sulzbacher-tailed-middle-serifed"
