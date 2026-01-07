@@ -1,10 +1,16 @@
 name: build fonts
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
 
       # - name: Run Git LFS
       #   run: git lfs install
@@ -14,22 +20,20 @@ jobs:
       #     node-version: latest
 
       - name: Install NPM
-        uses: bahmutov/npm-install@v1
-        with:
-          useRollingCache: true
+        uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f
 
       - name: Install ttfautohint
-        shell: sh
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends ttfautohint
+        uses:  awalsh128/cache-apt-pkgs-action@acb598e5ddbc6f68a970c5da0688d2f3a9f04d05
+        with:
+          packages: ttfautohint
 
       - name: Build Font
-        shell: sh
-        run: npm run --silent build -- ttf::${{ matrix.font-name }}
+        run: |
+          npm install
+          npm run --silent build -- ttf::${{ matrix.font-name }}
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
         with:
           name: "${{ matrix.font-name }}"
           path: "dist/${{ matrix.font-name }}"
