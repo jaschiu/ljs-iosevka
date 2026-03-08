@@ -1,5 +1,5 @@
 [buildPlans.lj-iosevka-term]
-family = "LJ's Iosevka Term"
+family = "LJsIosevkaTerm"
 spacing = "term"
 serifs = "sans"
 noCvSss = false
@@ -128,7 +128,7 @@ css = "semi-expanded"
 
 
 [buildPlans.lj-iosevka-fcmono]
-family = "LJ's Iosevka FontConfig Mono"
+family = "LJsIosevkaFontConfigMono"
 spacing = "fontconfig-mono"
 serifs = "sans"
 noCvSss = false
@@ -260,7 +260,7 @@ css = "semi-expanded"
 
 
 [buildPlans.lj-iosevka-aile]
-family = "LJ's Iosevka Aile"
+family = "LJsIosevkaAile"
 spacing = "quasi-proportional"
 serifs = "sans"
 noCvSss = false
@@ -373,7 +373,7 @@ css = "ultra-expanded"
 
 
 [buildPlans.lj-iosevka-etoile]
-family = "LJ's Iosevka Etoile"
+family = "LJsIosevkaEtoile"
 spacing = "quasi-proportional"
 serifs = "slab"
 noCvSss = false
