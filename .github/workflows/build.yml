@@ -20,7 +20,9 @@ jobs:
       #     node-version: latest
 
       - name: Install NPM
-        uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f
+        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f
+        with:
+          cache: npm
 
       - name: Install ttfautohint
         uses:  awalsh128/cache-apt-pkgs-action@acb598e5ddbc6f68a970c5da0688d2f3a9f04d05
@@ -30,16 +32,18 @@ jobs:
       - name: Build Font
         run: |
           npm install
-          npm run --silent build -- ttf::${{ matrix.font-name }}
+          npm run --silent build -- ttf::"$NAME"
+          tar -C dist/"$NAME" -I 'zstd -T0 -5' -cf "$NAME".tar.zst .
+        env:
+          NAME: ${{ matrix.font-name }}
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
         with:
-          name: "${{ matrix.font-name }}"
-          path: "dist/${{ matrix.font-name }}"
+          path: "${{ matrix.font-name }}.tar.zst"
           if-no-files-found: error
           retention-days: 90
-          compression-level: 9
+          archive: false
 
 
     strategy:
